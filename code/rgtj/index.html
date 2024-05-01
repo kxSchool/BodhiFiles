@@ -1,0 +1,285 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>全国文明城市测评调查问卷</title>
+</head>
+<link href="/jqueryui/development-bundle/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css">
+	<script src="/jqueryui/development-bundle/jquery-1.5.1.js"></script>
+	<script src="/jqueryui/development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="/jqueryui/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="/jqueryui/development-bundle/ui/jquery.ui.datepicker.js"></script>
+	<script src="/jqueryui/development-bundle/ui/i18n/jquery.ui.datepicker-zh-CN.js"></script>
+	<link rel="stylesheet" href="/jqueryui/development-bundle/demos/demos.css">
+	<script>
+	$(function() {
+		$.datepicker.setDefaults( $.datepicker.regional[ "" ] );
+		$( "#t2" ).datepicker( $.datepicker.regional[ "zh-CN" ] );
+	});
+	</script>
+<script language="javascript">
+function a(obj,va) {
+   obj.val(va);
+} ;
+
+$(document).ready(function (){
+   $("ul li").click(function (){
+    $(this).parent("ul").children("li").css('background-color','#ffffff');
+	 $(this).css('background-color','#ff0000');
+	 });
+});
+
+</script>
+<style type="text/css">
+<!--
+#page1 {
+	width: 540px;
+	float:left;
+}
+#page2 {
+	width: 340px;
+	float:left;
+}
+div {
+	width:100%;
+	line-height: 18px;
+}
+h1 {
+	width: 100%;
+	font-family: "宋体";
+	font-size: 13px;
+	line-height: 18px;
+	margin: 0px;
+}
+ul{
+	margin: 2px;
+}
+ul li{
+	display:inline;
+	margin: 5px;
+}
+li{list-style-type:none;}
+
+-->
+</style>
+<body>
+
+<div id="page1">
+<div style="text-align:center; font:bolder 36px '黑体';line-height: 40px;">全国文明城市测评调查问卷</div>
+<div style="font-size: 15px;">
+<label>社区或单位名称:
+  <input type="text" id="t1" name="t1" onpropertychange="a($('#d1'),$('#t1')[0].value);" onchange="a($('#d1'),$('#t1')[0].value);" onblur="a($('#d1'),$('#t1')[0].value);" style="border-bottom-style: solid;
+	border-bottom-color: #000000;
+	height: 20px;
+	width: 80px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-width: 1px;">
+</label>
+<label>发放日期:
+  <input type="text" id="t2" onpropertychange="a($('#d2'),$('#t2')[0].value);" onchange="a($('#d2'),$('#t2')[0].value);" onblur="a($('#d2'),$('#t2')[0].value);" style="border-bottom-style: solid;
+	border-bottom-color: #000000;
+	height: 20px;
+	width: 80px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-width: 1px;">
+</label>
+<label>问卷编号:
+  <input type="text" id="t3" onpropertychange="a($('#d3'),$('#t3')[0].value);" onchange="a($('#d3'),$('#t3')[0].value);" onblur="a($('#d3'),$('#t3')[0].value);" style="border-bottom-style: solid;
+	border-bottom-color: #000000;
+	height: 20px;
+	width: 80px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-width: 1px;">
+</label>
+</div>
+<div style="font-size: 14px;">
+市民朋友，您好！
+      <br>我们正在进行全国文明城市测评的问卷调查。您的意见将对全国文明城市创建、政府部门改进工作起重要的参考作用。请您配合填写以下的问卷内容，谢谢！
+</div>
+<div style="font-size: 14px;">==========================【注意事项】==========================<br>
+<li>请调查人员严格按随机抽样的要求抽选调查样本；</li>
+<li>所有题目均为必答题，每个选项仅选一个答案，请用“○”圈定所选项前的字母。</li>
+===============================================================</div>
+<div style="font-size: 16px;
+	font-family: '黑体';
+	line-height: 20px;">
+为了保证问卷信息的真实性，请提供以下基本信息（打“√”），以便我们对问卷的发放工作进行抽样核实。
+</div>
+<div style="font-size: 15px;
+	font-family: '黑体';
+	font-weight: bold;">
+<ul>
+<li>您的性别:</li>
+<li onclick="a($('#d4'),'男');">男</li> 
+<li onclick="a($('#d4'),'女');">女</li>
+</ul>
+</div> 
+<div style="font-size: 15px;
+	font-family: '黑体';
+	font-weight: bold;">
+<ul><li>您的年龄:</li>
+<li onclick="a($('#d5'),'16～35岁');"><label>16～35岁</label></li> 
+<li onclick="a($('#d5'),'36～55岁');"><label>36～55岁</label></li> 
+<li onclick="a($('#d5'),'56岁以上');"><label>56岁以上</label></li>
+</ul> 
+</div>
+<div style="font-size: 15px;
+	font-family: '黑体';
+	font-weight: bold;">
+<ul><li>您是:</li>
+<li><label onclick="a($('#d6'),'本市居民');">本市居民</label></li>
+<li><label onclick="a($('#d6'),'外地户籍在本市工作');">外地户籍在本市工作</label></li> 
+<li><label onclick="a($('#d6'),'外地临时来此地');">外地临时来此地</label></li> 
+</ul></div>
+<div style="font-size: 15px;font-weight: bold;">
+<ul>
+<li>您的职业:</li>
+<li><label onclick="a($('#d7'),'党政机关人员');" style="width: 130px;">
+党政机关人员</label> </li>
+<li><label onclick="a($('#d7'),'事业单位人员');" style="width: 130px;">
+事业单位人员</label> </li>
+<li><label onclick="a($('#d7'),'军事武警人员');" style="width: 130px;">
+军事武警人员</label> </li>
+<li><label onclick="a($('#d7'),'企业单位人员');" style="width: 130px;">
+企业单位人员</label> </li>
+<li><label onclick="a($('#d7'),'专业技术人员');" style="width: 130px;">
+专业技术人员</label> </li>
+<li><label onclick="a($('#d7'),'进城务工人员');" style="width: 130px;">
+进城务工人员</label> </li>
+<li><label onclick="a($('#d7'),'下岗失业人员');" style="width: 130px;">
+下岗失业人员</label> </li>
+<li><label onclick="a($('#d7'),'离退休人员');" style="width: 130px;">
+离退休人员</label> </li>
+<li><label onclick="a($('#d7'),'在校学生');" style="width: 130px;">
+在校学生</label> </li>
+<li><label onclick="a($('#d7'),'其他');"  style="width: 230px;">
+其他（请注明<span><input type="text" name="t7" id="t22" onpropertychange="a($('#d7'),$('#t22')[0].value);" onChange="a($('#d7'),$('#t22')[0].value);" onclick="$('#t21').attr('checked', true)" onblur="a($('#d7'),$('#t22')[0].value);" style="border-bottom-style: solid;
+	border-bottom-color: #000000;
+	height: 19px;
+	width: 60px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-width: 1px;"></span>）
+</label> 
+</li>
+</ul>
+</div><br>
+
+<div style="font-size: 13px;    line-height: 25px;">
+我们保证您的个人信息只用于本次全国文明城市测评，且不被泄露或不正当地使用。
+</div>
+<div style="font-size: 16px;
+	font-family: '黑体';
+	font-weight: bold;
+	line-height: 40px;">一、对市民素质和社会风尚的评价
+</div>
+<div style="font-size: 15px;
+	font-family: '黑体';
+	line-height: 15px;">
+	<ul>
+	<h1>１、您对近年来本市评选的道德模范人物的先进事迹了解吗</h1>
+<li style="font-size: 13px;
+	line-height: 15px;"><label onclick="a($('#d8'),'Ａ、非常了解');">Ａ、非常了解</label></li>
+<li style="font-size: 13px;
+	line-height: 15px;"><label onclick="a($('#d8'),'Ｂ、了解一些');">Ｂ、了解一些</label></li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d8'),'Ｃ、不了解');">Ｃ、不了解</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d8'),'Ｄ、不关心');">Ｄ、不关心</label>
+</li>
+</ul></div>
+<div style="font-size: 15px;
+	font-family: '黑体';
+	line-height: 15px;">
+<ul>
+<h1>２、近年来，本市开展了多种形式的宣传道德模范的活动，您知道吗</h1>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d9'),'Ａ、知道');">Ａ、知道</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d9'),'Ｂ、知道一些');">Ｂ、知道一些</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d9'),'Ｃ、不知道');">Ｃ、不知道</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d9'),'Ｄ、不关心');">Ｄ、不关心</label>
+</li>
+</ul></div>
+<div style="font-size: 15px;
+	font-family: '黑体';
+	line-height: 15px;">
+<ul><h1>３、您对近年来本市评选出的道德模范的看法</h1>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d10'),'Ａ、值得崇尚表彰');">Ａ、值得崇尚表彰</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d10'),'Ｂ、值得崇尚但不值得学习');">Ｂ、值得崇尚但不值得学习</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d10'),'Ｃ、不值得学习宣传');">Ｃ、不值得学习宣传</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d10'),'Ｄ、不清楚');">Ｄ、不清楚</label>
+</li>
+</ul></div>
+<div style="font-size: 15px;
+	font-family: '黑体';
+	line-height: 15px;">
+<ul><h1>４、近年来，您是否参加过单位或社区组织的种植、认养、保护花草树木等爱绿、护绿活动</h1>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d11'),'Ａ、经常参加');">Ａ、经常参加</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d11'),'Ｂ、有时参加');">Ｂ、有时参加</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d11'),'Ｃ、没有参加');">Ｃ、没有参加</label>
+</li>
+<li style="font-size: 13px;
+	line-height: 15px;">
+  <label onclick="a($('#d11'),'Ｄ、想参加但没人组织');">Ｄ、想参加但没人组织</label>
+</li>
+</ul></div>
+</div>
+<div id="page2">
+<li><span style="width:80px;">	答题1	</span>	<input type="text" id="d1" readonly="true">	</li>
+<li><span style="width:80px;">	答题2	</span>	<input type="text" id="d2" readonly="true">	</li>
+<li><span style="width:80px;">	答题3	</span>	<input type="text" id="d3" readonly="true">	</li>
+<li><span style="width:80px;">	答题4	</span>	<input type="text" id="d4" readonly="true">	</li>
+<li><span style="width:80px;">	答题5	</span>	<input type="text" id="d5" readonly="true">	</li>
+<li><span style="width:80px;">	答题6	</span>	<input type="text" id="d6" readonly="true">	</li>
+<li><span style="width:80px;">	答题7	</span>	<input type="text" id="d7" readonly="true">	</li>
+<li><span style="width:80px;">	答题8	</span>	<input type="text" id="d8" readonly="true">	</li>
+<li><span style="width:80px;">	答题9	</span>	<input type="text" id="d9" readonly="true">	</li>
+<li><span style="width:80px;">	答题10	</span>	<input type="text" id="d10" readonly="true">	</li>
+<li><span style="width:80px;">	答题11	</span>	<input type="text" id="d11" readonly="true">	</li>
+<li><span style="width:80px;">	答题12	</span>	<input type="text" id="d12" readonly="true">	</li>
+<li><span style="width:80px;">	答题13	</span>	<input type="text" id="d13" readonly="true">	</li>
+<li><span style="width:80px;">	答题14	</span>	<input type="text" id="d14" readonly="true">	</li>
+<li><span style="width:80px;">	答题15	</span>	<input type="text" id="d15" readonly="true">	</li>
+<li><span style="width:80px;">	答题16	</span>	<input type="text" id="d16" readonly="true">	</li>
+
+</div>
+</body>
+</html>

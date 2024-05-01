@@ -1,0 +1,38 @@
+body
+{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:0;
+	margin:0;
+	background:#ECF6F9 url(../images/othermainbg.gif) repeat-x;
+}
+.input1
+{
+	width:160px;
+	border:1px solid #AAB7C7;
+	font-size:12px;
+}
+.button1
+{
+	background:#ECF6F9 url(../images/buttonbg.gif) repeat-x;
+	border:1px solid #4A95C9;
+	height:18px;
+}
+.gray
+{
+	color:#999;
+}
+.red
+{
+	color:red;
+}
+a
+{
+	text-decoration:none;
+	color:#333;
+}
+a:hover
+{
+	text-decoration:underline;
+	color:#333;
+}

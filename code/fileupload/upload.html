@@ -1,0 +1,38 @@
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<!--#include FILE="upload_5xsoft.html"-->
+<%Server.ScriptTimeOut=5000%>
+<%
+Function MakeFileName()
+	Dim fname,i
+	fname = now()
+	fname = replace(fname,"-","")
+	fname = replace(fname," ","")
+	fname = replace(fname,":","")
+	fname = replace(fname,"PM","")
+	fname = replace(fname,"AM","")
+	fname = replace(fname,"上午","")
+	fname = replace(fname,"下午","")
+	for i = 1 to 8
+	randomize()
+		fname = fname & Int(9 * Rnd + 0)
+	next
+	MakeFileName = fname
+End Function 
+  
+function getex(filename)
+	getex = Split(filename,".")(UBound(Split(filename,".")))
+End Function
+
+set upload=new upload_5xsoft
+filename=MakeFileName()
+formPath = Server.MapPath("sfile")
+set file=upload.file("Filedata")
+theFileName = file.FileName
+upfileext = getex(theFileName)
+SaveFilePath="sfile/"& filename & "." & upfileext
+DiskFilePath = formPath &"/"& filename & "." & upfileext
+file.SaveAs DiskFilePath
+set file=nothing
+set upload=nothing
+response.Write SaveFilePath
+%> 

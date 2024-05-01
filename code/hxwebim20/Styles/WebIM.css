@@ -1,0 +1,694 @@
+
+/*All Window Css*/
+body
+{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:0;
+	margin:0;
+}
+.wContainerBorder
+{
+	position:absolute;
+	top:0;
+}
+.wContainer
+{
+	position:relative;
+}
+.wContent
+{
+	padding:1px;
+	position:relative;
+}
+.wRound_lt
+{
+	width:6px;
+	height:6px;
+	position:absolute;
+	background-image:url(../images/round_lt.gif);
+	left:-1px;
+	top:-1px;
+	font-size:1px;
+}
+.wRound_rt
+{
+	width:6px;
+	height:6px;
+	position:absolute;
+	background-image:url(../images/round_rt.gif);
+	right:-1px;
+	top:-1px;
+	font-size:1px;
+}
+.wRound_lb
+{
+	width:6px;
+	height:6px;
+	position:absolute;
+	background-image:url(../images/round_lb.gif);
+	left:-1px;
+	bottom:-1px;
+	font-size:1px;
+}
+.wRound_rb
+{
+	width:6px;
+	height:6px;
+	position:absolute;
+	background-image:url(../images/round_rb.gif);
+	right:-1px;
+	bottom:-1px;
+	font-size:1px;
+}
+.wResize
+{
+	width:12px;
+	height:12px;
+	position:absolute;
+	right:-1px;
+	bottom:-1px;
+	cursor:SE-resize;
+	z-index:999;
+	background-image:url(../images/resize.gif);
+	font-size:1px;
+}
+.wIcon
+{
+	position:absolute;
+	left:2px;
+	top:2px;
+}
+.wText
+{
+	padding:4px 80px 0  23px;
+	overflow:hidden;
+	word-break:break-all;
+	height:14px;
+	-moz-user-select:none;
+}
+.wControl
+{
+	position:absolute;
+	right:8px;
+	top:0;
+}
+.wControlMin
+{
+	width:26px;
+	height:17px;
+	overflow:hidden;
+	float:left;
+}
+.wControlClose
+{
+	width:42px;
+	height:17px;
+	overflow:hidden;
+	float:left;
+}
+.wLoading
+{
+	padding:2px;
+	top:18px;
+	right:9px;
+	background:#c44;
+	color:#fff;
+	position:absolute;
+	display:none;
+}
+.wWindowBorder
+{
+	position:absolute;
+	display:none;
+	z-index:99999;
+	border:1px dashed #fff;
+	background-color:#333;
+	filter: alpha(opacity=20); 
+	opacity: 0.2;
+	-moz-user-select:none;
+}
+.wWindowCover
+{
+	position:absolute;
+	display:none;
+	background-color:#444;
+	filter: alpha(opacity=60); 
+	opacity: 0.6;
+}
+.wWindowContent
+{
+	width:100%;
+}
+.wElemHidden
+{
+	width:1px;
+	height:1px;
+	font-size:1px;
+	filter:alpha(opacity=1); 
+	opacity:0.01;
+	position:absolute;
+	left:-100px;
+}
+/*Chat Window Css*/
+.wChat
+{
+	width:516px;
+	height:516px;
+	position:absolute;
+	border:1px solid #707070;
+	background-color:#fff;
+}
+.wChatTitle
+{
+	height:22px;
+	background-image:url(../images/chattitlebg.gif);
+	cursor:default;
+}
+.wChatTool
+{
+	height:60px;
+	background-image:url(../images/chattoolbg.gif);
+}
+.wChatMain
+{
+	height:430px;
+	background-image:url(../images/chatmainbg.gif);
+	padding:5px 2px 3px 5px;
+	float:left;
+}
+.wChatSide
+{
+	width:125px;
+	background-image:url(../images/chatmainbg.gif);
+	float:left;
+	display:none;
+	position:relative;
+}
+.wChatSideBar
+{
+	position:absolute;
+	top:83px;
+	right:1px;
+	width:11px;
+	padding:5px 0 5px 0;
+	font-size:1px;
+	background-image:url(../images/chatmainbg.gif);
+}
+.wChatSignHolder
+{
+	overflow:hidden;
+	position:relative;
+	top:-4px;
+}
+.wChatToolBar
+{
+	height:35px;
+	padding-left:5px;
+}
+.wChatToolBarButton
+{
+	height:31px;
+	width:32px;
+	padding:2px 0 0 2px;
+	float:left;
+}
+.wChatToolBarButtonHover
+{
+	background:url(../images/chatbuttonhoverbg.gif) no-repeat;
+}
+.wChatSign
+{
+	height:20px;
+	text-indent:24px;
+	color:#6F8A92;
+	width:4000px;
+}
+.wChatResizeBar
+{
+	position:absolute;
+	left:6px;
+	background-color:#000;
+	filter: alpha(opacity=60); 
+	opacity: 0.6;
+	width:100px;
+	height:10px;
+	display:none;
+	cursor:S-resize;
+	font-size:1px;
+}
+.wChatResize
+{
+	height:10px;
+	font-size:1px;
+	cursor:S-resize;
+	background:url(../images/resizedot.gif) no-repeat center center;
+}
+.wChatFaceButtonBar
+{
+	background:url(../images/chatfacebuttonbg.gif) repeat-x;
+	height:28px;
+	font-size:1px;
+	border-bottom:1px solid #BED6E0;
+	padding:1px 1px 2px 1px;
+}
+.wChatMsgTitle
+{
+	margin:4px 4px 0 2px;
+	color:#545454;
+}
+.wChatMsgContent
+{
+	margin:4px 4px 0 15px;
+}
+.wChatMsgSpecial
+{
+	margin:4px 4px 0 2px;
+	color:#545454;
+}
+.wChatMsgSplit
+{
+	height:1px;
+	border-bottom:1px solid #808080;
+	width:46px;
+	font-size:1px;
+	margin:5px 2px 5px 2px;
+}
+.wChatUserFace
+{
+	background-image:url(../images/chatfacebg.gif);
+	width:110px;
+	height:111px;
+	position:absolute;
+	padding:9px 0 0 10px;
+}
+.wChatFaceButton
+{
+	height:24px;
+	width:32px;
+	padding:2px;
+	font-size:1px;
+	float:left;
+}
+.wChatFaceButtonHover
+{
+	background-image:url(../images/chatfacebuttonhover.gif);
+}
+.wChatFaceContainer
+{
+	border:1px solid #DFDFDD;
+	position:absolute;
+	z-index:9999;
+	background-color:#fff;
+	display:none;
+}
+.wChatFaceItem
+{
+	height:19px;
+	width:19px;
+	padding:2px;
+	border:1px solid #DFDFDD;
+	float:left;
+	margin:5px 0 0 5px;
+}
+.wChatFaceItemHover
+{
+	border:1px solid #3869BB;
+}
+/*Main Window Css*/
+.wMain
+{
+	width:266px;
+	height:620px;
+	right:60px;
+	position:absolute;
+	border:1px solid #707070;
+	background-color:#D5FFFF;
+}
+.wMainTitle
+{
+	height:22px;
+	background-image:url(../images/maintitlebg.gif);
+	cursor:default;
+	overflow:hidden;
+}
+.wMainTool
+{
+	height:105px;
+	background-image:url(../images/maintoolbg.gif);
+}
+.wMainMain
+{
+	background-color:#fff;
+	height:490px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	border-top:1px solid #BED6E0;
+	border-bottom:1px solid #BED6E0;
+	width:100%;
+	-moz-user-select:none;
+	cursor:default;
+	width:100%;
+}
+.wMainUserInfo
+{
+	height:58px;
+	padding:7px 8px 7px 8px;
+}
+.wMainUserFaceBG
+{
+	height:52px;
+	width:52px;
+	padding:6px 0 0 6px;
+	background-image:url(../images/facebg.gif);
+	float:left;
+}
+.wMainUserInfoRight
+{
+	float:right;
+	width:134px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.wMainUserName
+{
+	font-size:13px;
+	line-height:20px;
+	color:#fff;
+	margin:8px 0 0 6px;
+	_margin:8px 0 0 3px;
+	padding:0 3px 0 3px;
+	_padding:2px 3px 0 3px;
+	height:20px;
+	_height:18px;
+	white-space:nowrap; 
+	cursor:default;
+	float:left;
+}
+.wMainUserSign
+{
+	color:#B9DDE7;
+	margin:3px 0 0 4px;
+	height:15px;
+	cursor:pointer;
+}
+.wMainToolBar
+{
+	height:28px;
+	padding:2px 5px 0 5px;
+}
+.wMainSearchUserPannel
+{
+	height:34px;
+	background-color:#fff;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.wMainSearchWebPannel
+{
+	height:33px;
+	padding:3px;
+	background-color:#ECF6F9;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.wMainSearchUserBG
+{
+	background-image:url(../images/searchuserbg.gif);
+	height:19px;
+	border:1px solid #C7C7C7;
+	width:100%;
+} 
+.wMainToolButton
+{
+	float:left;
+	height:20px;
+	width:21px;
+	font-size:1px;
+	padding:4px 0 0 5px;
+}
+.wMainToolButtonHover
+{
+	background-image:url(../images/toolbuttonhoverbg.gif);
+}
+.wMainContentButton
+{
+	float:left;
+	height:20px;
+	width:20px;
+	padding:1px;
+	font-size:1px;
+}
+.wMainContentButtonHover
+{
+	background-image:url(../images/contentbuttonhoverbg.gif);
+}
+.wMainListButton
+{
+	float:left;
+	height:20px;
+	width:22px;
+	font-size:1px;
+	padding:0 0 0 6px;
+}
+.wMainListButtonHover
+{
+	background:url(../images/listbuttonhoverbg.gif) no-repeat;
+}
+.wMainUserHeader
+{
+	width:100%;
+	text-indent:25px;
+	line-height:20px;
+	height:20px;
+	background:url(../images/arrow_r.gif) no-repeat 9px 4px;
+}
+.wMainUserHeaderHover
+{
+	background:url(../images/arrow_ron.gif) no-repeat 9px 4px;
+}
+.wMainUserHeaderEx
+{
+	width:100%;
+	text-indent:25px;
+	line-height:20px;
+	height:20px;
+	background:url(../images/arrow_d.gif)  no-repeat 9px 4px;
+}
+.wMainUserHeaderExHover
+{
+	background:url(../images/arrow_don.gif) no-repeat 9px 4px;
+}
+.wMainUserContainer
+{
+	width:100%;
+}
+.wMainUserItem
+{
+	height:20px;
+	padding-left:13px;
+	width:4000px;
+}
+.wMainUserItemText
+{
+	line-height:20px;
+	float:left;
+}
+.wMainUserItemBig
+{
+	height:63px;
+	padding-left:16px;
+	width:4000px;
+}
+.wMainUserItemBigLeft
+{
+	float:left;
+	width:52px;
+}
+.wMainUserItemFaceBG
+{
+	height:51px;
+	width:52px;
+	padding:6px 0 0 6px;
+	background-image:url(../images/useritembg.gif);
+	float:left;
+}
+.wMainUserItemStatus
+{
+	float:left;
+	height:60px;
+	padding-top:3px;
+	padding-left:5px;
+	width:24px;
+}
+.wMainUserItemBigRight
+{
+	float:left;
+	width:3900px;
+}
+.wCardBorder
+{
+	border:1px solid #999;
+	position:absolute;
+	z-index:9999;
+	background-color:#fff;
+	display:none;
+	height:160px;
+	width:228px;
+	overflow:hidden;
+}
+.wCardContainer
+{
+	position:relative;
+	height:150px;
+	margin:5px;
+	width:4000px;
+}
+.wCardCloseImage
+{
+	position:absolute;
+	top:2px;
+	left:208px;
+	width:8px;
+	height:8px;
+	cursor:pointer;
+}
+.wCardBaseInfo
+{
+	height:63px;
+	width:4000px;
+}
+/*Other Window Css*/
+.wOther
+{
+	width:516px;
+	height:516px;
+	position:absolute;
+	border:1px solid #707070;
+	background-color:#B3F9FF;
+}
+.wOtherTitle
+{
+	height:22px;
+	background-image:url(../images/othertitlebg.gif);
+	cursor:default;
+}
+.wOtherMain
+{
+	background:#ECF6F9 url(../images/othermainbg.gif) repeat-x;
+	overflow:hidden;
+}
+/*system object*/
+.sysMenu {
+	border:solid 1px #ACA899;
+	display:none;
+	position:absolute;
+	z-index:9999;
+	background-color:#fff;
+	color:#000;
+	padding:2px;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Color=#333333,Direction=120,strength=3);
+}
+.sysMenuItemWithIcon
+{
+	padding:0 10px 0 24px;
+	line-height:19px;
+	cursor:default;
+	background-position:1px center;
+	background-repeat:no-repeat;
+}
+.sysMenuItem
+{
+	padding:0 10px 0 15px;
+	line-height:19px;
+	cursor:default;
+}
+.sysMenuItemHover
+{
+	background-color:#316AC5;
+	color:#fff;
+}
+.sysMenuItemDisabled
+{
+	margin:2px 0 2px 0;
+	height:3px;
+	font-size:1px;
+	background:url(../images/menuitemdisabled.gif) repeat-x center 1px;
+}
+.cCheckBox
+{
+	height:14px;
+	width:14px;
+	background:url(../images/checkbox.gif) no-repeat 0 0;
+	display:block;
+	float:left;
+	font-size:1px;
+}
+.cCheckBoxChecked
+{
+	height:14px;
+	width:14px;
+	background:url(../images/checkbox.gif) no-repeat 0 -14px;
+	display:block;
+	float:left;
+	font-size:1px;
+}
+/*other*/
+.loginTextBox
+{
+	height:16px;
+	width:164px;
+	border:1px solid #AAB7C7;
+}
+.loginStatusSelect
+{
+	padding:0 7px 0 7px;
+	cursor:default;
+	float:left;
+	line-height:18px;
+	margin-left:8px;
+	border-left:1px solid #EBF6F9;
+	border-right:1px solid #EBF6F9;
+}
+.loginStatusSelectHover
+{
+	background:url(../images/loginbuttonhover.gif) repeat-x;
+	border-left:1px solid #A6ABAE;
+	border-right:1px solid #A6ABAE;
+}
+.loginLink
+{
+	text-decoration:none;
+	color:#0088E4;
+}
+.loginLink:hover
+{
+	text-decoration:underline;
+	color:#0088E4;
+}
+.loginConfirm
+{
+	height:20px;
+	width:69px;
+	cursor:pointer;
+	overflow:hidden;
+	margin-left:50px;
+}
+.button1
+{
+	background:#ECF6F9 url(../images/buttonbg.gif) repeat-x;
+	border:1px solid #4A95C9;
+	height:18px;
+}
+.adlink
+{
+	color:#999;
+	text-decoration:none;
+}
+.adlink:hover
+{
+	color:#333;
+	text-decoration:underline;
+} 

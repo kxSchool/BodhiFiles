@@ -1,0 +1,70 @@
+BODY {
+	FONT-SIZE: 9pt
+}
+
+TABLE {
+	BORDER-RIGHT: #cccccc 0px; BORDER-TOP: #cccccc 0px; FONT-SIZE: 9pt; BORDER-LEFT: #cccccc 0px; LINE-HEIGHT: 140%; BORDER-BOTTOM: #cccccc 0px
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ff9a10; TEXT-DECORATION: none
+}
+.table1 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #de6d18 1px; BORDER-LEFT: #de6d18 1px; BORDER-BOTTOM: #000000 1px solid
+}
+A.tt:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.tt:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.tt:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.tt:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.ttt:link {
+	COLOR: #990000; TEXT-DECORATION: none
+}
+A.ttt:visited {
+	COLOR: #990000; TEXT-DECORATION: none
+}
+A.ttt:active {
+	COLOR: #990000; TEXT-DECORATION: underline
+}
+A.ttt:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.word {
+	TEXT-INDENT: 20px; LINE-HEIGHT: 150%
+}
+.menu {
+	FILTER: Gray
+}
+.input {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 18px; BACKGROUND-COLOR: #7caff7
+}
+.titlefont {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #000000
+}
+.button {
+	CURSOR: hand
+}
+.title1 {
+	FILTER: DropShadow(Color="#000000",OffX="1",OffY="1",Positive="1"); COLOR: #ffffff
+}
+.title2 {
+	FILTER: DropShadow(Color="#FFFFFF",OffX="1",OffY="1",Positive="1"); COLOR: #000000
+}
+.bg1 {
+	BACKGROUND-POSITION: right 50%; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(/images/bg_title_r.gif); BACKGROUND-REPEAT: no-repeat
+}

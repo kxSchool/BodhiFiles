@@ -1,0 +1,5 @@
+[ODBC]
+DRIVER=SQL Server
+Network=DBMSSOCN
+WSID=SERVER
+APP=Microsoft Open Database Connectivity

@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>AjaxUpload</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="scripts/jquery.js"></script>
+
+<style type="text/css" media="all">
+*{
+	margin:0;
+	padding:0;
+}
+
+img{border:none;}
+
+ul{
+	list-style-type:none;
+}
+
+ul li{
+	padding:2px 4px;
+}
+
+body{
+	font-family: 宋体, 黑体,verdana, Arial;
+	font-size:12px;
+	color:#333;
+	background:#DDDDDD;
+	margin:30px;
+	padding:0;
+}
+
+.box{
+	border:1px solid #CCC;
+	background:#FFF;
+	padding:8px;
+	margin:5px;
+	clear:both;
+}
+
+.title {
+	background:#F0F0F0;padding:5px;
+	font-weight:bold;
+}
+
+.tooltip{
+	background:#F0F0F0;
+	border-color:#bbb;
+}
+
+.tooltip h1 {
+    color:#A8DF00;
+    font-family: 微软雅黑,黑体,宋体,verdana, Arial;
+}
+
+.titlebutton{
+	float:right;
+}
+
+.uploading{
+    background:#FFF;
+    color:#444;
+    text-align:left;
+    width:500px;
+    padding:4px;
+}
+
+.image{
+    border:1px solid #ddd;
+    margin:2px;
+    padding:1px;
+    display:inline;
+    width:300px;
+}
+
+.uploadcontrol {
+    margin:4px 0;
+    border-bottom:1px solid #F0F0F0;
+}
+</style>
+<script type="text/javascript">
+	
+ 	$(document).ready(function(){ 		 
+ 		 for(var i=0;i<5;i++)            //创建五个上传框
+ 		 {
+ 		    uploadcreate($("#uploadbox"),i);
+ 		 }
+	});
+
+ 	
+ 	
+ 	//载入中的GIF动画
+    var loadingUrl = "images/ajax-loader.gif";
+    
+    //选择文件后的事件,iframe里面调用的
+    var uploading = function(imgsrc,itemid){
+        var el = $("#uploading"+itemid);
+        $("#ifUpload"+itemid).fadeOut("fast");
+        el.fadeIn("fast");
+	    el.html("<img src='"+loadingUrl+"' align='absmiddle' /> 上传中...");
+	    return el;
+    };
+    
+    //重新上传方法    
+    var uploadinit = function(itemid){
+        currentItemID ++;
+        $("#uploading"+itemid).fadeOut("fast",function(){
+             $("#ifUpload"+itemid).fadeIn("fast");
+             $("#panelViewPic"+itemid).fadeOut("fast");
+        });
+               
+    };
+    
+    //上传时程序发生错误时，给提示，并返回上传状态
+    var uploaderror = function(itemid){
+        alert("程序异常，"+itemid+"项上传未成功。");
+        uploadinit();
+    };
+    
+    //上传成功后的处理
+	var uploadsuccess = function(newpath,itemid){
+        $("#uploading"+itemid).html("文件上传成功. <a href='javascript:void(0);' onclick='uploadinit("+itemid+");'>[重新上传]</a>");
+      
+    };
+    
+    
+    var currentItemID = 0;  //用于存放共有多少个上传控件了
+    //创建一个上传控件
+    var uploadcreate = function(el,itemid){
+        currentItemID ++;
+        if(itemid == null)
+        {
+            itemid = currentItemID;
+        }  
+        var strContent = "<div class='uploadcontrol'><iframe src=\"upload.aspx?id="+itemid+"\" id=\"ifUpload"+itemid+"\" frameborder=\"no\" scrolling=\"no\" style=\"width:400px; height:28px;\"></iframe>";
+	    strContent += "<div class=\"uploading\" id=\"uploading"+itemid+"\" style=\"display:none;\" ></div>";
+	    strContent += "<div class=\"image\" id=\"panelViewPic"+itemid+"\" style=\"display:none;\"></div></div>";
+	    el.append(strContent);
+    };
+ 	
+</script>
+
+</head>
+
+<body>
+
+
+<div id="toolbox" class="tooltip box">
+	<a href="#" onclick="uploadcreate($('#uploadbox'));">添加一个新上传控件</a> 
+</div>
+<div id="uploadbox" class="box">
+	
+</div>
+
+</body>
+
+</html>

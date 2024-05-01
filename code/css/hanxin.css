@@ -1,0 +1,63 @@
+HTML {
+	HEIGHT: 100%
+}
+BODY {
+	HEIGHT: 100%
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #626262; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #626262; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+
+
+A {
+	COLOR: #4d784d; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f70; TEXT-DECORATION: underline
+}
+
+
+
+
+.ge {
+	CLEAR: both; FONT-SIZE: 0px; LINE-HEIGHT: 0px; HEIGHT: 1px
+}
+
+#J_div {
+	BORDER-RIGHT: #b6d1c2 1px solid;  BORDER-TOP: #b6d1c2 1px solid; Z-INDEX: 999;  BORDER-LEFT: #b6d1c2 1px solid; WIDTH:70px; BORDER-BOTTOM: #b6d1c2 1px solid; position:relative;top:0px;left:0px; HEIGHT: 83px; BACKGROUND-COLOR: #fff
+}
+#J_title {
+	DISPLAY: inline;  MARGIN-LEFT: 0px;WIDTH:80px;  COLOR: #4d784d; LINE-HEIGHT: 20px; BORDER-BOTTOM: #b6d1c2 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 20px;
+}
+#J_title SPAN {
+	FONT-WEIGHT: normal; FONT-SIZE: 14px; MARGIN-RIGHT: 20px
+}
+#J_intr {
+	CLEAR: both; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; MARGIN-TOP: 1px; HEIGHT: 25px;BORDER-BOTTOM: #b6d1c2 1px solid; 
+}
+#J_intr A {
+	DISPLAY: block;FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;BORDER-TOP: #b6d1c2 1px solid; PADDING-LEFT: 10px; LINE-HEIGHT: 25px; HEIGHT: 25px; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+#J_intr .J_icon1 {
+	BACKGROUND-POSITION: 13px 5px
+}
+#J_intr .J_icon2 {
+	BACKGROUND-POSITION: 13px -18px
+}
+#J_intr .J_icon3 {
+	BACKGROUND-POSITION: 13px -42px
+}
+
+
+.Ge_h {
+	HEIGHT: 13px
+}
+
+
+
+.Ge_h2 {
+	HEIGHT: 10px
+}
